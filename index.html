@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save The World | Landing Page Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">World</a>
+            <div class="toggle"></div>
+        </header>
+        <img src="bg.jpg" class="bg">
+        <img src="bird.png" class="bird">
+        <div class="content">
+            <h2>We can save The <br><span>Earth</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet minima, doloribus asperiores aspernatur veritatis adipisci dolor eos laudantium neque veniam dignissimos magni, libero corporis dolorem nostrum repudiandae facere fugiat minus!</p>
+            <a href="#">Join Us</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+        <div class="textBlocks">
+            <div class="block">
+                <h3>Defenders of Earth</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nulla deserunt earum aspernatur! Excepturi, minima!</p>
+            </div>
+            <div class="block">
+                <h3>How to save Water</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nulla deserunt earum aspernatur! Excepturi, minima!</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("mousemove", function(e){
+            const bg = document.querySelector('.bg');
+            const bird = document.querySelector('.bird');
+            const content = document.querySelector('.content');
+
+            bg.style.width = 100 + e.pageX/100 + '%';
+            bg.style.width = 100 + e.pageX/100 + '%';
+
+            bird.style.right = 100+ e.pageX/2 + 'px';
+            content.style.left = e.pageX/2 - 100 + 'px';
+     })
+    </script>
+</body>
+</html>
